@@ -1,0 +1,46 @@
+{
+    "Arabic":"Arabic",
+  
+    "Home": "بيت",
+    "Contact US": "اتصل بنا",
+    "Logout": "تسجيل خروج",
+
+    "Good Morning":"صباح الخير",
+    "System Administration":"إدارة النظام",
+    "Private Warehouse": "مستودع خاص",
+    "Sports event clearing agency authorization":"تصريح وكالة تخليص الأحداث الرياضية",
+    "Ragistration":"تسجيل",
+    "Cargo Manifest":"بيان البضائع",
+    "Detained Goods":"البضائع المحتجزة",
+    "Decleartions":"التصريحات",
+    "Item 3":"البند 3",
+    "Item 4":"البند 4",
+    "Account Management":"ادارة الحساب",
+    "Activate Account":"تفعيل حساب",
+    "User Management":"إدارةالمستخدم",
+    "Approve Cleaning Agency":"الموافقة على وكالة التنظيف",
+    "Approve Cleaning Agent":"الموافقة على وكيل التنظيف",
+    "Reset Password":"إعادة تعيين كلمة المرور",
+    "Print User ID card":"طباعة بطاقة هوية المستخدم",
+    "Search for AEO traders":"ابحث عن متداولي AEO",
+    "Create Request":"إنشاء طلب",
+
+
+    "Search Criteria":"معايير البحث",
+    "CR Number":"رقم السجل التجاري",
+    "Agency Name":"اسم الوكالة",
+    "Custom Code":"التعليمات البرمجية المخصصة",
+    "Creation Date From":"تاريخ الإنشاء من",
+    "Cleaning Agency Type":"نوع وكالة التنظيف",
+    "Status":"حالة",
+    "Establishment ID":"معرف المنشأة",
+    "Creation Date To":"تاريخ الإنشاء إلى",
+    "Search":"يبحث",
+    "Reset":"إعادة ضبط",
+    "Search Results":"نتائج البحث",
+
+    "Creation Date":"تاريخ الإنشاء"
+
+
+
+  }

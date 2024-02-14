@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="profile">
+        {{'Good Morning' | translate}}, {{name}}
+        <p>{{ currentDateTime | date:'dd/mm/yyyy hh:mm' }}</p>
+    </div>
+    <div class="groups">
+        <div class="sidebar" [ngClass]="{'collapsed': isCollapsed}">
+            <!-- <div class="group-header" (click)="toggleCollapse()">Toggle Collapse</div> -->
+
+            <div class="group-header" (click)="toggleGroup('group1')">> {{'System Administration' | translate}}</div>
+            <div *ngIf="!isCollapsed && isGroupOpen('group1')" class="group-content">
+                <a routerLink="/">{{'Item 3'|translate}}</a>
+                <a routerLink="/">{{'Item 4'|translate}}</a>
+            </div>
+
+            <div class="group-header" (click)="toggleGroup('group2')">> {{'Private Warehouse' | translate}}</div>
+            <div *ngIf="!isCollapsed && isGroupOpen('group2')" class="group-content">
+                <a routerLink="/">{{'Item 3'|translate}}</a>
+                <a routerLink="/">{{'Item 4'|translate}}</a>
+            </div>
+
+            <div class="group-header" (click)="toggleGroup('group3')"> > {{'Sports event clearing agency authorization'
+                | translate}}</div>
+            <div *ngIf="!isCollapsed && isGroupOpen('group3')" class="group-content">
+                <a routerLink="/">{{'Item 3'|translate}}</a>
+                <a routerLink="/">{{'Item 4'|translate}}</a>
+            </div>
+
+            <div class="group-header" (click)="toggleGroup('group4')"> > {{'Ragistration' | translate}}</div>
+            <div *ngIf="!isCollapsed && isGroupOpen('group4')" class="group-content">
+                <a routerLink="/">{{'Account Management'|translate}}</a>
+                <a routerLink="/">{{'Activate Account'|translate}}</a>
+                <a routerLink="/">{{'User Management'|translate}} </a>
+                <a routerLink="approveCleaningAgency">{{'Approve Cleaning Agency'|translate}}</a>
+                <a routerLink="/">{{'Approve Cleaning Agent'|translate}}</a>
+                <a routerLink="/">{{'Reset Password'|translate}}</a>
+                <a routerLink="/">{{'Print User ID card'|translate}}</a>
+                <a routerLink="/">{{'Search for AEO traders'|translate}}</a>
+                <a routerLink="/">{{'Create Request'|translate}}</a>
+            </div>
+
+            <div class="group-header" (click)="toggleGroup('group5')"> > {{'Cargo Manifest'|translate}}</div>
+            <div *ngIf="!isCollapsed && isGroupOpen('group5')" class="group-content">
+                <a routerLink="/">{{'Item 3'|translate}}</a>
+                <a routerLink="/">{{'Item 4'|translate}}</a>
+            </div>
+
+            <div class="group-header" (click)="toggleGroup('group6')"> > {{'Detained Goods'|translate}}</div>
+            <div *ngIf="!isCollapsed && isGroupOpen('group6')" class="group-content">
+                <a routerLink="/">{{'Item 3'|translate}}</a>
+                <a routerLink="/">{{'Item 4'|translate}}</a>
+            </div>
+
+
+            <div class="group-header" (click)="toggleGroup('group7')"> > {{'Decleartions'|translate}}</div>
+            <div *ngIf="!isCollapsed && isGroupOpen('group7')" class="group-content">
+                <a routerLink="/">{{'Item 3'|translate}}</a>
+                <a routerLink="/">{{'Item 4'|translate}}</a>
+            </div>
+
+        </div>
+    </div>
+</div>

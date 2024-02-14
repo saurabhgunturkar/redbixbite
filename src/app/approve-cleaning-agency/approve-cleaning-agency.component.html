@@ -1,0 +1,86 @@
+<div class="container">
+    <div class="img">
+        <img src="https://images.unsplash.com/photo-1524522173746-f628baad3644?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b2NlYW4lMjBmcmVpZ2h0fGVufDB8fDB8fHww"
+            alt="Ship image" />
+    </div>
+    <div class="container-search">
+        <h4>{{'Approve Cleaning Agency'|translate}}</h4>
+        <div class="search-criteria-container">
+            <div class="title">{{'Search Criteria'|translate}}</div>
+            <form>
+                <div class="search-fields">
+                    <div class="col-1">
+                        <label for="crNumber">{{'CR Number'|translate}}:</label>
+                        <label for="AgencyName">{{'Agency Name'|translate}}:</label>
+                        <label for="customCode">{{'Custom Code'|translate}}:</label>
+                        <label for="creationDateFrom">{{'Creation Date From'|translate}}:</label>
+                        <label for="agencyType">{{'Cleaning Agency Type'|translate}}:</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" name="crNumber" #crNumber>
+                        <input type="text" name="agencyName" #agencyName>
+                        <input type="text" name="customCode" id="customCode" #customCode>
+                        <input type="date" name="creationDateFrom" id="creationDateFrom" #creationDateFrom>
+                        <select name="agencyType" id="agencyType" #agencyType>
+                            <option value="all">All</option>
+                            <option value="government">Government</option>
+                            <option value="private">Private</option>
+                            <option value="public">Public</option>
+                        </select>
+                    </div>
+
+                    <div class="col-3">
+                        <label for="status">{{'Status'|translate}}:</label>
+                        <label for="establishmentId">{{'Establishment ID'|translate}}:</label>
+                        <br><br>
+                        <label for="creationDateTo">{{'Creation Date To'|translate}}:</label>
+                    </div>
+                    <div class="col-4">
+                        <select name="status" id="status" #Status>
+                            <option value="">Select One</option>
+                            <option value="approved">Approved</option>
+                            <option value="pending">Pending</option>
+                            <option value="rejected">Rejected</option>
+                        </select>
+                        <input type="text" name="establishmentId" id="establishmentId" #establishmentId>
+                        <br><br>
+                        <input type="date" name="creationDateTo" id="creationDateTo" #creationDateTo>
+                    </div>
+                </div>
+                <div class="search-buttons">
+                    <button type="submit"
+                        (click)="search(agencyName, customCode, establishmentId, Status, agencyType )">{{'Search'|translate}}</button>
+                    <button type="reset">{{'Reset'|translate}}</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="search-results-container">
+            <div class="title">{{'Search Results'|translate}}</div>
+            <div class="result-table">
+                <table>
+                    <tr>
+                        <th>Sr</th>
+                        <th>{{'Establishment ID'|translate}}</th>
+                        <th>{{'CR Number'|translate}}</th>
+                        <th>{{'Custom Code'|translate}}</th>
+                        <th>{{'Agency Name'|translate}}</th>
+                        <th>{{'Status'|translate}}</th>
+                        <th>{{'Creation Date'|translate}}</th>
+                        <th>{{'Cleaning Agency Type'|translate}}</th>
+                    </tr>
+                    <tr *ngFor="let data of datas; let i = index">
+                        <td>{{ i + 1 }}</td>
+                        <td>{{ data.EstablishmentID }}</td>
+                        <td>{{ data.CRNumber }}</td>
+                        <td>{{ data.CustomCode }}</td>
+                        <td>{{ data.AgencyName }}</td>
+                        <td>{{ data.status }}</td>
+                        <td>{{ data.creationDateTo }}</td>
+                        <td>{{ data.AgencyType }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

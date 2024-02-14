@@ -1,0 +1,47 @@
+{ 
+    
+    "Arabic":"العربية",
+
+    "Home": "Home",
+    "Contact US": "Contact US",
+    "Logout": "Logout",
+
+
+    "Good Morning":"Good Morning",
+    "System Administration":"System Administration",
+    "Private Warehouse": "Private Warehouse",
+    "Sports event clearing agency authorization":"Sports event clearing agency authorization",
+    "Ragistration":"Ragistration",
+    "Cargo Manifest":"Cargo Manifest",
+    "Detained Goods":"Detained Goods",
+    "Decleartions":"Decleartions",
+    "Item 3":"Item 3",
+    "Item 4":"Item 4",
+    "Account Management":"Account Management",
+    "Activate Account":"Activate Account",
+    "User Management":"User Management",
+    "Approve Cleaning Agency":"Approve Cleaning Agency",
+    "Approve Cleaning Agent":"Approve Cleaning Agent",
+    "Reset Password":"Reset Password",
+    "Print User ID card":"Print User ID card",
+    "Search for AEO traders":"Search for AEO traders",
+    "Create Request":"Create Request",
+
+
+    "Search Criteria":"Search Criteria",
+    "CR Number":"CR Number",
+    "Agency Name":"Agency Name",
+    "Custom Code":"Custom Code",
+    "Creation Date From":"Creation Date From",
+    "Cleaning Agency Type":"Cleaning Agency Type",
+    "Status":"Status",
+    "Establishment ID":"Establishment ID",
+    "Creation Date To":"Creation Date To",
+    "Search":"Search",
+    "Reset":"Reset",
+    "Search Results":"Search Results",
+
+    "Creation Date":"Creation Date"
+
+
+  }

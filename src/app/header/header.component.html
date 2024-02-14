@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="container-btns">
+        <!-- <button (click)="switchLanguage('en')" (click)="englishToggle()">English</button>
+        <button (click)="switchLanguage('ar')" (click)="toggleSidebar()">العربية</button> -->
+        <button class="lang" *ngIf="Temp" (click)="switchLanguage('en')" (click)="englishToggle()">{{Flag}}</button>
+        <button class="lang" *ngIf="!Temp" (click)="switchLanguage('ar')" (click)="toggleSidebar()">{{'Arabic' | translate}}</button>
+        <div class="container-menu">
+            <button>{{'Home' | translate}}</button>
+            <button>{{'Contact US' | translate}}</button>
+            <button>{{'Logout' | translate}}</button>
+        </div>
+    </div>
+</div>

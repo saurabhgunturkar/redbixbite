@@ -1,0 +1,20 @@
+.main {
+  overflow: hidden;
+
+}
+
+#sidebar {
+  float: left;
+  height: 500px;
+  width: 200px;
+  background-color: #333;
+  color: white;
+  transition: margin-left 0.01s ease-in-out;
+}
+
+#content {
+  /* margin-left: 200px;
+  padding: 15px; */
+  transition: margin-left 0.01s ease-in-out;
+  overflow: hidden;
+}
